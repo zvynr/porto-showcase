@@ -1,0 +1,23 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "A **simple, clean, and modern** portfolio website created by **We R Developer**. Built with **HTML**, **CSS**, and **JavaScript**, this site is perfect for showcasing your projects, skills, and personal journey. 🎨",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zvynr/porto-showcase.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zvynr/porto-showcase/issues"
+  },
+  "homepage": "https://github.com/zvynr/porto-showcase#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
