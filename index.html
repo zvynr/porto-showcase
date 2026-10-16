@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annisa Fatimah Azzahra | Java Backend Developer</title>
+    <link rel="icon" type="image/png" href="https://i.ibb.co/QvmxvDz3/6e098dd3-a2f7-4d04-9130-b9952be96389.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-animation"></div>
+    <div class="floating-elements" id="floatingElements"></div>
+
+    <nav id="mainNav">
+        <div class="container nav-container">
+            <a href="#" class="logo">Annisa Fatimah A.</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#experience">Experience & Impact</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home" onclick="closeMobileMenu()"><i class="fas fa-home"></i> Home</a>
+            <a href="#experience" onclick="closeMobileMenu()"><i class="fas fa-briefcase"></i> Experience & Impact</a>
+            <a href="#roadmap" onclick="closeMobileMenu()"><i class="fas fa-road"></i> Roadmap</a>
+            <a href="#projects" onclick="closeMobileMenu()"><i class="fas fa-folder-open"></i> Projects</a>
+            <a href="#skills" onclick="closeMobileMenu()"><i class="fas fa-code"></i> Skills</a>
+            <a href="#education" onclick="closeMobileMenu()"><i class="fas fa-graduation-cap"></i> Education</a>
+        </div>
+
+        <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1>Hi, I'm <span>Annisa Fatimah Azzahra</span></h1>
+                    <p style="font-size: 1.2rem; font-weight: 700; color: var(--accent); margin-bottom: 15px; letter-spacing: 0.5px;">
+                        JAVA BACKEND DEVELOPER | PERFORMANCE OPTIMIZATION & SYSTEM INTEGRATION
+                    </p>
+                    <p style="line-height: 1.8;">
+                        Java Backend Developer with almost 3 years of experience in enterprise backend development, production maintenance, and system integration. Specialized in root-cause analysis, resolving complex production bottlenecks through code refactoring, SQL query optimization, and JVM memory tuning.
+                    </p>
+                    <div style="margin-top: 25px; display: flex; gap: 15px; flex-wrap: wrap;">
+                        <a href="#experience" class="cta-button">Explore Work & Impact</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual fade-in">
+                    <div class="floating-card">
+                        <div class="card-content">
+                            <div class="profile-avatar">
+                                <img src="https://lh3.googleusercontent.com/d/1TbrQygKMCUHJTQ044mM0FiIRByOSZznr" alt="Annisa Fatimah Azzahra">
+                            </div>
+                            <h3 style="margin-bottom: 5px;">Annisa Fatimah A.</h3>
+                            <p style="color: var(--accent); font-weight: 600;">Java Backend Developer</p>
+                            <div class="location-chip" style="margin-top: 10px;">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jakarta, Indonesia</span>
+                            </div>
+                            <div style="margin-top: 20px; padding: 15px; background: rgba(16, 185, 129, 0.1); border-radius: 10px; width: 100%; text-align: left;">
+                                <p style="font-size: 0.85rem; margin-bottom: 3px; color: var(--gray);"><strong>Experience:</strong></p>
+                                <p style="font-size: 1.1rem; font-weight: 700; color: var(--accent);">Almost 3 Years (Dec 2023 – Present)</p>
+                            </div>
+                            <div style="margin-top: 15px; display: flex; flex-direction: column; gap: 8px; width: 100%; font-size: 0.88rem; text-align: left; color: var(--gray-light);">
+                                <div><i class="fas fa-envelope" style="color: var(--accent); width: 20px;"></i> annisafazzahra14@gmail.com</div>
+                                <div><i class="fas fa-phone" style="color: var(--accent); width: 20px;"></i> +6285786326407</div>
+                                <div><i class="fab fa-linkedin" style="color: var(--accent); width: 20px;"></i> <a href="https://linkedin.com/in/annisa-fatimah-azzahra-217a012a1" target="_blank" style="color: inherit; text-decoration: underline;">LinkedIn Profile</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-down">
+            <a href="#experience">
+                <i class="fas fa-chevron-down"></i>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- WORK EXPERIENCE & KEY HIGHLIGHT CARDS SECTION -->
+    <section id="experience" class="education" style="padding-top: 70px; padding-bottom: 70px;">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Work Experience & Engineering Highlights</h2>
+                <p>PT Meditama Indo Teknologi — Backend Developer (December 2023 – Present)</p>
+            </div>
+
+            <!-- Role Header Banner -->
+            <div class="glass-card fade-in" style="max-width: 1050px; margin: 0 auto 30px auto; text-align: left; padding: 25px 30px; border-left: 4px solid var(--accent);">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                    <div>
+                        <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); font-weight: 700;">Role & Company</span>
+                        <h3 style="color: white; font-size: 1.6rem; margin-top: 2px;">Backend Developer</h3>
+                        <p style="color: var(--gray-light); font-size: 1rem;">PT Meditama Indo Teknologi — Jakarta, Indonesia</p>
+                    </div>
+                    <div>
+                        <span style="padding: 6px 16px; background: rgba(16, 185, 129, 0.15); border: 1px solid var(--accent); border-radius: 20px; font-size: 0.88rem; color: var(--accent); font-weight: 600;">
+                            Dec 2023 – Present
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expanded Highlight Cards Grid -->
+            <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+
+                <!-- Card 1: API Response Time -->
+                <div class="glass-card fade-in" style="text-align: left; padding: 25px;">
+                    <div class="card-icon" style="color: #10b981;"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3 class="card-title" style="font-size: 1.7rem; color: var(--accent);">1.82s → 3.15ms</h3>
+                    <p style="font-weight: 600; color: white; margin-bottom: 8px;">API Response Time Optimization</p>
+                    <p style="font-size: 0.88rem; color: var(--gray-light); line-height: 1.6;">
+                        Slashing response latency over 500x by resolving N+1 query issues and implementing bulk database data retrieval.
+                    </p>
+                </div>
+
+                <!-- Card 2: JVM Garbage Collection -->
+                <div class="glass-card fade-in" style="text-align: left; padding: 25px;">
+                    <div class="card-icon" style="color: #6366f1;"><i class="fas fa-memory"></i></div>
+                    <h3 class="card-title" style="font-size: 1.7rem; color: #818cf8;">30.3% → 1.59%</h3>
+                    <p style="font-weight: 600; color: white; margin-bottom: 8px;">JVM GC Overhead Reduction</p>
+                    <p style="font-size: 0.88rem; color: var(--gray-light); line-height: 1.6;">
+                        Dramatically cut Garbage Collection overhead by 95% by identifying and fixing excessive object allocations in application logging.
+                    </p>
+                </div>
+
+                <!-- Card 3: Spring Boot Startup -->
+                <div class="glass-card fade-in" style="text-align: left; padding: 25px;">
+                    <div class="card-icon" style="color: #f59e0b;"><i class="fas fa-rocket"></i></div>
+                    <h3 class="card-title" style="font-size: 1.7rem; color: #fbbf24;">~6x Faster</h3>
+                    <p style="font-weight: 600; color: white; margin-bottom: 8px;">Startup Response Acceleration</p>
+                    <p style="font-size: 0.88rem; color: var(--gray-light); line-height: 1.6;">
+                        Investigated and eliminated WAR packaging, Tomcat resource scanning, and Hibernate query parsing bottlenecks during service startup.
+                    </p>
+                </div>
+
+                <!-- Card 4: Concurrency & Read Locking -->
+                <div class="glass-card fade-in" style="text-align: left; padding: 25px;">
+                    <div class="card-icon" style="color: #ec4899;"><i class="fas fa-lock"></i></div>
+                    <h3 class="card-title" style="font-size: 1.4rem; color: #f472b6;">Thread-Safe Read Locking</h3>
+                    <p style="font-weight: 600; color: white; margin-bottom: 8px;">Sequential Numbering Concurrency</p>
+                    <p style="font-size: 0.88rem; color: var(--gray-light); line-height: 1.6;">
+                        Resolved race conditions in sequential number generation by implementing read locking for thread-safe numbering under concurrent requests.
+                    </p>
+                </div>
+
+                <!-- Card 5: Apache POI Large Export Engine -->
+                <div class="glass-card fade-in" style="text-align: left; padding: 25px;">
+                    <div class="card-icon" style="color: #10b981;"><i class="fas fa-file-excel"></i></div>
+                    <h3 class="card-title" style="font-size: 1.4rem; color: #34d399;">Apache POI Heap & Sliced Exports</h3>
+                    <p style="font-weight: 600; color: white; margin-bottom: 8px;">Large Excel Processing Engine</p>
+                    <p style="font-size: 0.88rem; color: var(--gray-light); line-height: 1.6;">
+                        Resolved OOM heap errors by switching to streaming <code style="color: var(--accent);">SXSSFWorkbook</code>, consolidating 4 queries into 1, implementing sliced downloads with mandatory date filtering, and ensuring request-local instances.
+                    </p>
+                </div>
+
+                <!-- Card 6: Database Connection Pooling -->
+                <div class="glass-card fade-in" style="text-align: left; padding: 25px;">
+                    <div class="card-icon" style="color: #8b5cf6;"><i class="fas fa-database"></i></div>
+                    <h3 class="card-title" style="font-size: 1.4rem; color: #a78bfa;">Zero Pool Exhaustion</h3>
+                    <p style="font-weight: 600; color: white; margin-bottom: 8px;">Connection Pool Tuning</p>
+                    <p style="font-size: 0.88rem; color: var(--gray-light); line-height: 1.6;">
+                        Eliminated production database connection exhaustion errors under high concurrency by analyzing connection pool metrics and optimizing pool configuration.
+                    </p>
+                </div>
+
+                <!-- Card 7: S3 Latency Analysis -->
+                <div class="glass-card fade-in" style="text-align: left; padding: 25px;">
+                    <div class="card-icon" style="color: #3b82f6;"><i class="fas fa-cloud-download-alt"></i></div>
+                    <h3 class="card-title" style="font-size: 1.4rem; color: #60a5fa;">S3 Direct Retrieval</h3>
+                    <p style="font-weight: 600; color: white; margin-bottom: 8px;">Cloud Storage Latency Optimization</p>
+                    <p style="font-size: 0.88rem; color: var(--gray-light); line-height: 1.6;">
+                        Identified folder-wide object validation overhead in S3 download flows and recommended direct object retrieval to reduce latency.
+                    </p>
+                </div>
+
+                <!-- Card 8: Real-time & Integrations -->
+                <div class="glass-card fade-in" style="text-align: left; padding: 25px;">
+                    <div class="card-icon" style="color: #14b8a6;"><i class="fas fa-network-wired"></i></div>
+                    <h3 class="card-title" style="font-size: 1.4rem; color: #2dd4bf;">Real-Time Services</h3>
+                    <p style="font-weight: 600; color: white; margin-bottom: 8px;">Integrations & Messaging</p>
+                    <p style="font-size: 0.88rem; color: var(--gray-light); line-height: 1.6;">
+                        Built WebSocket/Push notifications, Spring WebFlux Mekari WhatsApp webhooks, and Keycloak OAuth2 login.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP / TIMELINE SECTION -->
+    <section id="roadmap" class="journey">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Career Roadmap & Yearly Milestones</h2>
+                <p>Evolution of technical responsibilities, optimizations, and projects from Year 1 to Year 3</p>
+            </div>
+
+            <div class="journey-timeline">
+
+                <!-- 2023 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3 style="margin-bottom: 10px; color: white;">Intensive Bootcamp & Foundations</h3>
+                        <p><strong>CODEAN Back-End Java Developer Bootcamp (September – November 2023):</strong> Completed 3-month intensive training building foundational knowledge in Java programming, algorithms, Spring Boot, PostgreSQL, and Git. <br/>
+                        <a href="https://medium.com/@annisafazzahra14/pengalaman-bootcamp-back-end-developer-di-codean-f5fe9ebe7db0" target="_blank" style="color: var(--accent); text-decoration: underline; display: inline-block; margin-top: 6px;">
+                            <i class="fas fa-book-open"></i> Read Bootcamp Experience on Medium
+                        </a></p>
+                    </div>
+                </div>
+
+                <!-- TAHUN 1 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">Tahun 1 (2024)</div>
+                    <div class="timeline-content">
+                        <h3 style="margin-bottom: 10px; color: white;">Professional Start & Initial Backend/Android Work</h3>
+                        <p><strong>PT Meditama Indo Teknologi (Starting Dec 2023 / 2024):</strong> Embarked on professional software engineering career focusing on customer-service backend applications and cross-development.</p>
+
+                        <h4 style="color: var(--primary-light); margin-top: 15px; margin-bottom: 8px;">Key Contributions & Responsibilities:</h4>
+                        <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.7; color: var(--gray-light);">
+                            <li>Developed & maintained customer service backend application.</li>
+                            <li>Implemented WebSocket & Web Push notifications for real-time alerts.</li>
+                            <li>Built Spring WebFlux WhatsApp webhook service integrated with Mekari.</li>
+                            <li>Applied Java Spring Boot performance tuning: caching, batch processing, service separation for targeted tuning, query loop optimizations, SonarLint/SonarQube code cleanup, and compiled JasperReports templates.</li>
+                            <li>Extended Java Native Android App with CRUD module, monitoring features, and file attachment viewer.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TAHUN 2 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">Tahun 2 (2025)</div>
+                    <div class="timeline-content">
+                        <h3 style="margin-bottom: 10px; color: white;">Production Maintenance, Security & Core Optimizations</h3>
+
+                        <h4 style="color: var(--primary-light); margin-top: 15px; margin-bottom: 8px;">Key Achievements & Integrations:</h4>
+                        <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.7; color: var(--gray-light);">
+                            <li>Monitored and maintained production services using <strong>Dynatrace</strong> observability.</li>
+                            <li>Integrated Google Sign-In with Keycloak / OAuth2 and email-based code verification.</li>
+                            <li>Solved manual SSL certificate injection issues in Spring Boot services.</li>
+                            <li><strong>JVM GC Overhead Reduction:</strong> Cut GC overhead from <strong>30.3% to 1.59%</strong> by identifying excessive object allocations in application logging.</li>
+                            <li><strong>N+1 Query Resolution:</strong> Slashing average API response time from <strong>1.82s to 3.15ms</strong> (>500x speedup).</li>
+                            <li><strong>Higher Education:</strong> Enrolled as an Undergraduate Student in <strong>Information Systems at Universitas Jakarta</strong> (Sept 2024 – Present, GPA: 3.49 / 4.00).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- TAHUN 3 -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-year">Tahun 3 (2026+)</div>
+                    <div class="timeline-content">
+                        <h3 style="margin-bottom: 10px; color: white;">Advanced Concurrency, Query Architecture & Cross Projects</h3>
+
+                        <h4 style="color: var(--primary-light); margin-top: 15px; margin-bottom: 8px;">Advanced Optimizations & Production Fixes:</h4>
+                        <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.7; color: var(--gray-light);">
+                            <li><strong>Read Locking:</strong> Resolved race conditions in sequential number generation for thread-safe concurrent numbering.</li>
+                            <li><strong>S3 Direct Retrieval:</strong> Identified unnecessary folder-wide validation in S3 download flow and recommended direct object retrieval to reduce latency.</li>
+                            <li><strong>Connection Pooling:</strong> Solved database connection exhaustion errors caused by inefficient connection pool configuration.</li>
+                            <li><strong>Selective Baseline Querying:</strong> Reconstructed SQL SELECT queries with selective baseline table joins for efficient WHERE processing.</li>
+                            <li><strong>Spring Boot Startup Boost:</strong> Eliminated WAR packaging, Tomcat resource scanning, and Hibernate query parsing overhead for <strong>~6x faster startup API response</strong>.</li>
+                            <li><strong>Apache POI Excel Downloads:</strong> Switched to streaming <code style="color: var(--accent);">SXSSFWorkbook</code>, consolidated 4 queries into 1 (solving SQL parameter overflow & map allocations), implemented sliced downloads with mandatory date filtering, and request-local thread safety.</li>
+                            <li>Bugfixed API validation inconsistencies and duplicate-key errors.</li>
+                        </ul>
+
+                        <h4 style="color: var(--primary-light); margin-top: 15px; margin-bottom: 8px;">Cross-Development & Benchmark Projects:</h4>
+                        <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.7; color: var(--gray-light);">
+                            <li><strong>Odoo Manufacturing Customization:</strong> Developed quality control workflows in manufacturing ERP automation.</li>
+                            <li><strong>Kotlin Android Cash-Withdrawal Demo:</strong> Built QR code generation & scanning demo app using Jetpack Compose, CameraX, Google ML Kit, and ZXing.</li>
+                            <li><strong>Java vs Go Application Benchmark:</strong> Built Go benchmarking service to compare Java (JVM 17 vs Native) vs Go performance under controlled k6, Prometheus, and Grafana workloads.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SHOWCASE SECTION -->
+    <section id="projects" class="education" style="padding-top: 60px; padding-bottom: 60px; background: rgba(15, 23, 42, 0.4);">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Featured Backend Projects</h2>
+                <p>Production-grade multi-service architectures and systems</p>
+            </div>
+
+            <div class="cards-grid" style="grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto;">
+
+                <!-- Project 1: Note Platform -->
+                <div class="glass-card fade-in" style="text-align: left; padding: 35px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+                            <div>
+                                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); font-weight: 700;">Multi-Service System</span>
+                                <h3 style="color: white; font-size: 1.8rem; margin-top: 2px;">Note Platform</h3>
+                            </div>
+                            <a href="https://github.com/zvynr/note-application" target="_blank" class="cta-button" style="padding: 8px 16px; font-size: 0.85rem; background: rgba(99, 102, 241, 0.25); border: 1px solid var(--primary);">
+                                <i class="fab fa-github" style="margin-right: 6px;"></i> Repository
+                            </a>
+                        </div>
+
+                        <p style="color: var(--gray-light); line-height: 1.8; margin-bottom: 20px; font-size: 0.95rem;">
+                            A robust multi-service backend platform for note management built with Java 8 and Spring Boot. Designed with a clear separation of concerns featuring an API Gateway, async event-driven email notifications, distributed caching, and hardened auth security.
+                        </p>
+
+                        <!-- Tech Stack Badges -->
+                        <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px;">
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">Java 8</span>
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">Spring Boot 2.7</span>
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">Spring Cloud Gateway</span>
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">PostgreSQL</span>
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">Redis</span>
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">RabbitMQ</span>
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">Docker</span>
+                        </div>
+
+                        <h4 style="color: var(--accent); margin-top: 15px; margin-bottom: 10px; font-size: 1.05rem;">
+                            <i class="fas fa-sitemap" style="margin-right: 8px;"></i>Architecture & Key Components
+                        </h4>
+                        <ul style="list-style-type: disc; padding-left: 18px; line-height: 1.7; color: var(--gray-light); display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem; margin-bottom: 20px;">
+                            <li><strong>API Gateway (:8080):</strong> Routing, CORS, and Redis token-bucket rate limiting.</li>
+                            <li><strong>Note Service (:8081):</strong> Users, notes, JWT + RBAC, and Redis cache.</li>
+                            <li><strong>Notification Service (:8082):</strong> Async RabbitMQ email worker (SMTP).</li>
+                            <li><strong>Hardened Security:</strong> Stateless JWT, BCrypt, SHA-256 token hashing, and attempt limiting.</li>
+                        </ul>
+                    </div>
+
+                    <div style="padding: 12px 15px; background: rgba(16, 185, 129, 0.1); border-radius: 8px; border-left: 3px solid var(--accent);">
+                        <p style="font-size: 0.85rem; color: white;">
+                            <strong>Design Choice:</strong> RabbitMQ for fire-and-forget notification jobs ensures high availability and resilience.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 2: Java vs Go Benchmark Suite -->
+                <div class="glass-card fade-in" style="text-align: left; padding: 35px; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+                            <div>
+                                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); font-weight: 700;">Performance Benchmarking</span>
+                                <h3 style="color: white; font-size: 1.8rem; margin-top: 2px;">Java 21 vs GraalVM vs Go Benchmark</h3>
+                            </div>
+                            <a href="https://github.com/zvynr/java-golang-benchmark" target="_blank" class="cta-button" style="padding: 8px 16px; font-size: 0.85rem; background: rgba(99, 102, 241, 0.25); border: 1px solid var(--primary);">
+                                <i class="fab fa-github" style="margin-right: 6px;"></i> Repository
+                            </a>
+                        </div>
+
+                        <p style="color: var(--gray-light); line-height: 1.8; margin-bottom: 20px; font-size: 0.95rem;">
+                            A high-performance benchmarking architecture to evaluate and compare <strong>Java 21 HotSpot JVM (Virtual Threads)</strong>, <strong>GraalVM Native Image 21 (AOT)</strong>, and <strong>Go (Gin)</strong> across throughput, cold start, memory footprint (RSS), and CPU efficiency.
+                        </p>
+
+                        <!-- Tech Stack Badges -->
+                        <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 20px;">
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">Java 21</span>
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">GraalVM Native</span>
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">Go 1.22</span>
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">Spring Boot 3.3</span>
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">Grafana k6</span>
+                            <span class="skill-item" style="font-size: 0.75rem; padding: 3px 8px;">Prometheus</span>
+                        </div>
+
+                        <h4 style="color: var(--accent); margin-top: 15px; margin-bottom: 10px; font-size: 1.05rem;">
+                            <i class="fas fa-chart-bar" style="margin-right: 8px;"></i>Workload Scenarios (W0 – W6)
+                        </h4>
+                        <ul style="list-style-type: disc; padding-left: 18px; line-height: 1.7; color: var(--gray-light); display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem; margin-bottom: 20px;">
+                            <li><strong>W0 & W1:</strong> Cold start latency and CPU-bound tasks (SHA-256 hashing, array sorting).</li>
+                            <li><strong>W2 & W3:</strong> I/O bound database query latency and high-concurrency scaling (up to 200 VU).</li>
+                            <li><strong>W4:</strong> Transient object allocation pressure and Garbage Collection overhead.</li>
+                            <li><strong>W5 & W6:</strong> Realistic enterprise CRUD mix and heavy workload simulation.</li>
+                        </ul>
+                    </div>
+
+                    <div style="padding: 12px 15px; background: rgba(99, 102, 241, 0.1); border-radius: 8px; border-left: 3px solid var(--primary);">
+                        <p style="font-size: 0.85rem; color: white;">
+                            <strong>Observability:</strong> Integrated with Grafana, Prometheus, cAdvisor, and Promtail for side-by-side telemetry.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Technical Skills & Ecosystem</h2>
+                <p>Comprehensive stack, frameworks, tools, and methodologies</p>
+            </div>
+
+            <div class="skills-container">
+
+                <!-- Core Backend -->
+                <div class="skill-category fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <div>
+                            <h3 style="color: white; margin-bottom: 5px;">Core Backend & Java</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Frameworks & Architecture</p>
+                        </div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">Spring Boot</div>
+                        <div class="skill-item">Spring MVC</div>
+                        <div class="skill-item">Spring WebFlux</div>
+                        <div class="skill-item">Spring Data JPA</div>
+                        <div class="skill-item">JPA Specification</div>
+                        <div class="skill-item">MyBatis</div>
+                        <div class="skill-item">Spring Security</div>
+                        <div class="skill-item">JWT & RBAC</div>
+                        <div class="skill-item">Spring Validation</div>
+                        <div class="skill-item">Lombok</div>
+                        <div class="skill-item">Apache POI</div>
+                        <div class="skill-item">Swagger / OpenAPI</div>
+                        <div class="skill-item">REST API</div>
+                    </div>
+                </div>
+
+                <!-- Databases & Integration -->
+                <div class="skill-category fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                        <div>
+                            <h3 style="color: white; margin-bottom: 5px;">Databases & Integration</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Persistence & Cloud APIs</p>
+                        </div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">PostgreSQL</div>
+                        <div class="skill-item">Oracle</div>
+                        <div class="skill-item">OAuth2</div>
+                        <div class="skill-item">Keycloak</div>
+                        <div class="skill-item">Apache Kafka</div>
+                        <div class="skill-item">WebSocket</div>
+                        <div class="skill-item">Web Push</div>
+                        <div class="skill-item">Amazon S3 API</div>
+                        <div class="skill-item">Email Integration</div>
+                    </div>
+                </div>
+
+                <!-- Performance & Observability -->
+                <div class="skill-category fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <h3 style="color: white; margin-bottom: 5px;">Performance & Observability</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Optimization & Concurrency</p>
+                        </div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">API Optimization</div>
+                        <div class="skill-item">JVM GC Analysis</div>
+                        <div class="skill-item">Heap Optimization</div>
+                        <div class="skill-item">SQL Query Optimization</div>
+                        <div class="skill-item">N+1 Resolution</div>
+                        <div class="skill-item">Read Locking & Concurrency</div>
+                        <div class="skill-item">Connection Pool Tuning</div>
+                        <div class="skill-item">VisualVM</div>
+                        <div class="skill-item">Dynatrace</div>
+                        <div class="skill-item">Prometheus</div>
+                        <div class="skill-item">Grafana</div>
+                        <div class="skill-item">Promtail</div>
+                        <div class="skill-item">JMeter</div>
+                        <div class="skill-item">k6</div>
+                        <div class="skill-item">Postman</div>
+                    </div>
+                </div>
+
+                <!-- Mobile, Tools & DevOps -->
+                <div class="skill-category fade-in">
+                    <div class="skill-header">
+                        <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                        <div>
+                            <h3 style="color: white; margin-bottom: 5px;">Mobile, DevOps & Additional</h3>
+                            <p style="color: var(--gray); font-size: 0.9rem;">Multi-Language & Tools</p>
+                        </div>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">Kotlin / Android</div>
+                        <div class="skill-item">Jetpack Compose</div>
+                        <div class="skill-item">CameraX & ML Kit</div>
+                        <div class="skill-item">ZXing</div>
+                        <div class="skill-item">Java Native Android</div>
+                        <div class="skill-item">Go (Gin)</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Odoo Customization</div>
+                        <div class="skill-item">Git / GitLab CI/CD</div>
+                        <div class="skill-item">Docker & Compose</div>
+                        <div class="skill-item">SonarQube / SonarLint</div>
+                        <div class="skill-item">HTML & CSS</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION & TRAINING SECTION -->
+    <section id="education" class="education" style="background: rgba(15, 23, 42, 0.4);">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Education & Training</h2>
+                <p>Academic degrees and professional development</p>
+            </div>
+            <div class="cards-grid">
+                <div class="glass-card fade-in">
+                    <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="card-title">Universitas Jakarta</h3>
+                    <p>Undergraduate Student, Information Systems</p>
+                    <p style="margin-top: 8px; color: var(--gray-light);">September 2024 – Present</p>
+                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 10px; height: 10px; background: var(--accent); border-radius: 50%;"></div>
+                        <span>Current GPA: <strong>3.49 / 4.00</strong></span>
+                    </div>
+                </div>
+
+                <div class="glass-card fade-in">
+                    <div class="card-icon"><i class="fas fa-certificate"></i></div>
+                    <h3 class="card-title">CODEAN Bootcamp</h3>
+                    <p>Back-End Java Developer Bootcamp (3-month intensive)</p>
+                    <p style="margin-top: 8px; color: var(--gray-light);">2023</p>
+                    <div style="margin-top: 20px;">
+                        <a href="https://medium.com/@annisafazzahra14/pengalaman-bootcamp-back-end-developer-di-codean-f5fe9ebe7db0" target="_blank" style="color: var(--primary-light); text-decoration: underline; font-size: 0.92rem;">
+                            <i class="fas fa-external-link-alt"></i> Read Bootcamp Story on Medium
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass-card fade-in">
+                    <div class="card-icon"><i class="fas fa-globe"></i></div>
+                    <h3 class="card-title">Languages</h3>
+                    <p>Professional communication proficiency in Indonesian and English.</p>
+                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 10px; height: 10px; background: var(--secondary); border-radius: 50%;"></div>
+                        <span>Indonesian (Native) | English</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h2 style="font-size: 1.8rem; margin-bottom: 10px; background: var(--gradient-1); -webkit-background-clip: text; background-clip: text; color: transparent;">
+                        Annisa Fatimah Azzahra
+                    </h2>
+                    <p style="color: var(--gray);">Java Backend Developer | Performance Optimization & System Integration</p>
+                    <p style="color: var(--gray); font-size: 0.9rem; margin-top: 4px;">Jakarta, Indonesia</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/annisa-fatimah-azzahra-217a012a1" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:annisafazzahra14@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:+6285786326407" class="social-link" title="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy;
+                    <script>document.write(new Date().getFullYear())</script> <b>Annisa Fatimah Azzahra</b>. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
